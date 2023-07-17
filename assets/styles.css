@@ -27,12 +27,46 @@ body{
 .card{
     background-color: var(--white);
     padding:2rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 200px;
 }
  p{
-    font-style: italic;
+    font-style:normal;
+}
+.input-fields p{
+    color: var(--somkey-grey);
 }
 .input-fields{
     display: flex;
     justify-content:start;
     align-items: flex-start;
+    gap: 12px;
+    padding-bottom:49px;
 }
+.input-fields input{
+     font-size:38px;
+     max-width:120px;
+     padding-block:12px;
+     padding-left:12px;
+     text-align: left;
+     font-weight: bold;
+     color: var(--somkey-grey);
+}
+.content p{
+    font-style: italic;
+    font-weight: 800;
+    font-size:70px;
+    
+}
+.content span{
+    color: var(--purple);
+}
+hr{
+    width:550px;
+}
+img{
+    background-color: var(--purple);
+    border-radius: 50%;
+    padding: 12px;
+}
+
