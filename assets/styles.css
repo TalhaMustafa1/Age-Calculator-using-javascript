@@ -64,9 +64,19 @@ body{
 hr{
     width:550px;
 }
-img{
+button{
     background-color: var(--purple);
     border-radius: 50%;
     padding: 12px;
+    cursor: pointer;
+    border-color:none;
 }
+@media only screen and (max-width: 425px) {
+    .card{
+        padding:1rem;
+    }
+    body{
+        height: 100vh;
+    }
+  }
 
