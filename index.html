@@ -5,36 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="assets/styles.css">
-  
+  <script src="assets/index.js"></script>
   <title>Frontend Mentor | Age calculator app</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
   <main>
     <div class="card">
-      <form action="" id="ageCalculatorForm">
+      <form action="" id="ageCalculatorForm" onsubmit="return false;">
       <div class="input-fields">
         <div>
-          <p>Day</p>
+          <p class="format">Day</p>
           <input type="text" placeholder="DD" id="dayInput">
+           <p class="error-El-day"></p>
         </div>
         <div>
-          <p>Month</p>
+          <p class="format">Month</p>
           <input type="text" placeholder="MM" id="monthInput">
+          <p class="error-El-month"></p>
         </div>
         <div>
-          <p>Year</p>
+          <p class="format">Year</p>
           <input type="text" placeholder="YYY" id="yearInput">
+          <p class="error-El-year"></p>
         </div>
       </div>
        <div class="line-circle ">
         <hr>
-        <button> <img src="assets/images/icon-arrow.svg" alt=""></button>
+        <button onclick="submitFunction()"> <img src="assets/images/icon-arrow.svg" alt=""></button>
       </div>    
       <div class="content">
-        <p><span>- - </span>years</p>
-        <p><span>- - </span>months</p>
-        <p><span>- - </span>days</p>
+        <p><span id="resultYears">- - </span>years</p>
+        <p><span id="resultMonths">- - </span>months</p>
+        <p><span id="resultDays">- - </span>days</p>
       </div>
     </form>
     </div>
